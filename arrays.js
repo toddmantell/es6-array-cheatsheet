@@ -1,6 +1,10 @@
 const myArray = [1,2,3,4,5,6];
 console.log(`original array values: ${myArray}`);
 
+//concat flattens two arrays into one without mutating the original arrays
+let flattened = myArray.concat([7,8,9,10]);
+console.log(`flattened values: ${flattened}`);
+
 let mapped = myArray.map((item) => {
   return item + 1;
 });
@@ -37,6 +41,4 @@ console.log(`spliced values: ${spliced}`);
 console.log(`spliced has mutated the array: ${newArray}`);
 
 let sliced = myArray.slice(1,3);
-
 console.log(`sliced values: ${sliced}`);
-
