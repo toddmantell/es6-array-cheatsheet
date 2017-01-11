@@ -1,3 +1,4 @@
+//**The functions below return a new array or single value and do not mutate the original array
 const myArray = [1,2,3,4,5,6];
 console.log(`original array values: ${myArray}`);
 
