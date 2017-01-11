@@ -32,13 +32,5 @@ console.log(myArray.every((item) => {
   return item < 10;
 }));
 
-//splice mutates the existing array, so use slice instead
-const newArray = [1,2,3,4,5,6];
-//splice(index, how many values to take)
-let spliced = newArray.splice(1, 2); //returns new array with [2,3]
-
-console.log(`spliced values: ${spliced}`);
-console.log(`spliced has mutated the array: ${newArray}`);
-
 let sliced = myArray.slice(1,3);
 console.log(`sliced values: ${sliced}`);
