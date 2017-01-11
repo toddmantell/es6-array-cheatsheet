@@ -6,10 +6,12 @@ console.log(`original array values: ${myArray}`);
 let flattened = myArray.concat([7,8,9,10]);
 console.log(`flattened values: ${flattened}`);
 
+//.map transforms each item in the array however you specify in the callback
 let mapped = myArray.map((item) => {
   return item + 1;
 });
 
+//.filter returns the items in the array filtered by however you specify in the callback
 let filtered = myArray.filter((item) => {
   return item > 1 && item < 6;
 });
@@ -19,6 +21,7 @@ let reduced = myArray.reduce((accumulator = 0, currentValue) => {
   return accumulator + currentValue;
 });
 
+//.find returns the FIRST value that matches your criteria. Returns only a single value (or undefined)
 let found = myArray.find((item) => {
   return item > 1;
 });
